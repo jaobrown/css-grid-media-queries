@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  line-height: 1.5;
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px; }
+
+.content-wrap {
+  padding: 0 1.5em; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr; }
+  #section-a .content-text {
+    -webkit-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 2em;
+    column-gap: 2em; }
+    #section-a .content-text p {
+      padding-top: 0; }
+  #section-b ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  #section-b li {
+    width: 29%;
+    min-height: 20%; }
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2 / 4; }
+  .box,
+  #main-footer div {
+    grid-column: span 2; } }
+
+@media (min-width: 1050px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr; }
+  #section-a .content-text {
+    -webkit-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 2em;
+    column-gap: 2em; }
+    #section-a .content-text p {
+      padding-top: 0; }
+  #section-b ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  #section-b li {
+    width: 29%;
+    min-height: 20%; }
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2 / 4; }
+  .box,
+  #main-footer div {
+    grid-column: span 2; } }
+
+@font-face {
+  font-family: bold;
+  src: url(../media/fonts/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: italic;
+  src: url(../media/fonts/Roboto-Italic.ttf); }
+
+@font-face {
+  font-family: lightItalic;
+  src: url(../media/fonts/Roboto-LightItalic.ttf); }
+
+@font-face {
+  font-family: medium;
+  src: url(../media/fonts/Roboto-Medium.ttf); }
+
+@font-face {
+  font-family: regular;
+  src: url(../media/fonts/Roboto-Regular.ttf); }
+
+@font-face {
+  font-family: slabLight;
+  src: url(../media/fonts/RobotoSlab-light.ttf); }
+
+@font-face {
+  font-family: slabRegular;
+  src: url(../media/fonts/RobotoSlab-Regular.ttf); }
+
+h1, h2 {
+  font-family: "bold";
+  margin: 0;
+  padding: 1em 0; }
+
+h3, h4 {
+  font-family: medium;
+  margin: 0;
+  padding: 1em 0; }
+
+h5 {
+  font-family: slabLight;
+  margin: 0;
+  padding: 1em 0; }
+
+h6 {
+  font-family: lightItalic;
+  margin: 0;
+  padding: 1em 0; }
+
+p {
+  font-family: slabRegular;
+  margin: 0;
+  padding: 1em 0; }
+
+.gray {
+  background-color: #4f4f4f; }
+
+.yellow {
+  background-color: #FFC636; }
+
+.green {
+  background-color: #7b999b; }
+
+.white {
+  background-color: #FFFFFF; }
+
+.orange {
+  background-color: #7cd4ff; }
+
+#showcase {
+  min-height: 450px;
+  color: #4f4f4f;
+  text-align: center; }
+  #showcase .bg-img {
+    position: absolute;
+    background: #4f4f4f url("https://static.pexels.com/photos/205316/pexels-photo-205316.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4; }
+  #showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0px; }
+
+#section-a {
+  background-color: #7b999b;
+  color: #FFFFFF;
+  padding-bottom: 2em; }
+
+#section-b {
+  padding: 2em 1em 1em; }
+  #section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #section-b ul li {
+      margin-bottom: 1em;
+      background-color: #4f4f4f;
+      color: #FFFFFF; }
+
+.card-content {
+  padding: 1.5em; }
+
+#section-c {
+  background-color: #7b999b;
+  color: #FFFFFF;
+  padding: 2em; }
+
+#section-d .box {
+  padding: 2em;
+  background-color: #FFFFFF;
+  color: #4f4f4f; }
+  #section-d .box:nth-child(2) {
+    background-color: #7b999b;
+    color: white; }
+
+.btn {
+  display: inline-block;
+  background-color: #4f4f4f;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: .75em 1.5em;
+  margin: .5em 0;
+  border: 1px solid #4f4f4f;
+  border-radius: 100px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .btn:hover {
+    background: #FFFFFF;
+    color: #4f4f4f; }
+
+#main-footer {
+  padding: 2em;
+  background-color: #4f4f4f;
+  color: #FFFFFF;
+  text-align: center; }
+  #main-footer a {
+    text-decoration: none;
+    color: #7cd4ff; }

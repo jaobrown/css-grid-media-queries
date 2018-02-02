@@ -1,0 +1,41 @@
+.gray {
+  background-color: $gray;
+}
+
+.yellow {
+  background-color: $yellow;
+}
+
+.green {
+  background-color: $green;
+}
+
+.white {
+  background-color: $white;
+}
+
+.orange {
+  background-color: $orange;
+}
+
+#showcase {
+  min-height: 450px;
+  color: $gray;
+  text-align: center;
+  .bg-img {
+    position: absolute;
+    background: $gray url('https://static.pexels.com/photos/205316/pexels-photo-205316.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  h1 {
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+
+}

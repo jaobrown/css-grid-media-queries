@@ -1,0 +1,13 @@
+//section-d styles
+
+#section-d {
+  .box {
+    padding: 2em;
+    background-color: $white;
+    color: $gray;
+    &:nth-child(2) {
+      background-color: $green;
+      color: white;
+    }
+  }
+}

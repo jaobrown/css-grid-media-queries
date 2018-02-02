@@ -1,0 +1,19 @@
+//section-b styles
+
+#section-b {
+  padding: 2em 1em 1em;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 1em;
+      background-color: $gray;
+      color: $white;
+    }
+  }
+}
+
+.card-content {
+  padding: 1.5em;
+}
