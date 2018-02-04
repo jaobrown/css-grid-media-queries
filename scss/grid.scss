@@ -1,6 +1,6 @@
 //Media Query for Grid Layout
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
